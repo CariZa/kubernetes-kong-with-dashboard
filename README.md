@@ -10,7 +10,7 @@ I also used postgres.
 
 https://github.com/Kong/kong-dist-kubernetes
 
-## Kong kubrenetes setup documentation here:
+## Kong kubernetes setup documentation here:
 
 https://docs.konghq.com/install/kubernetes/
 
