@@ -97,7 +97,24 @@ It might still be starting up or your internal kong-admin url could be incorrect
 
 ### Test the dashboard works
 
-You should be able to access your kong-dashboard using the url: 
+Get the port for the dashboard service 
+
+    kubectl get svc
+
+Copy the **second** port number of the kong-dashboard service eg:
+
+When you run "$ kubectl get service" you might get this response:
+
+    NAME               TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+    ...
+    kong-dashboard     NodePort    10.101.71.20     <none>        8001:30970/TCP   46m
+    ...
+
+The port number will look something like **30970**
+
+You should be able to access your kong-dashboard using a url like:
+
+http://localhost:30970
 
 # Note
 
